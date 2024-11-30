@@ -31,6 +31,9 @@ connectDB();
 //rest object
 const app = express();
 
+// Trust proxy
+app.set('trust proxy', 1);
+
 
 //Middleware
 app.use(helmet());  //header
